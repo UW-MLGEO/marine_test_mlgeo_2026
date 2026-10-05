@@ -1,0 +1,15 @@
+[project]
+name = "marine_test_mlgeo_2026"
+version = "0.1.0"
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[dependencies]
+python = ">=3.10,<3.13"
+pytest = ">=8.0.0,<9"
+
+[pypi-dependencies]
+marine_test_mlgeo_2026 = { path = ".", editable = true }
+
+[tasks]
+test = "pytest"
